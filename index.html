@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MANGOROYALE 👑🥭</title>
+
+    <!-- Elegant fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Decorative background elements -->
+    <div class="floating-decoration deco-mango mango-one">🥭</div>
+    <div class="floating-decoration deco-mango mango-two">🥭</div>
+    <div class="floating-decoration deco-crown crown-one">♕</div>
+    <div class="floating-decoration deco-star star-one">✦</div>
+    <div class="floating-decoration deco-star star-two">✧</div>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="navbar">
+        <div class="nav-logo">
+            <span>🥭</span>
+            MANGOROYALE
+        </div>
+
+        <div class="royal-seal">
+            OFFICIAL<br>
+            MANGO<br>
+            COUNCIL
+        </div>
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    ✦ THE SUPREME MANGO AUTHORITY ✦
+                </div>
+
+                <h1>
+                    MANGO
+                    <span>ROYALE</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Because apparently mangoes need a monarchy.
+                </p>
+
+                <p class="hero-description">
+                    Upload your mangoes and allow our completely unnecessary
+                    artificial intelligence to determine which candidate
+                    possesses the greatest amount of absolutely meaningless
+                    <strong>royal energy.</strong>
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="primary-button" id="enterCourtBtn">
+                        👑 ENTER THE MANGO COURT
+                    </button>
+
+                    <button class="secondary-button" id="learnBtn">
+                        📜 THE MANGO CONSTITUTION
+                    </button>
+                </div>
+
+                <div class="useless-badge">
+                    <span>100% USELESS</span>
+                    <span>•</span>
+                    <span>0% AGRICULTURAL ACCURACY</span>
+                </div>
+
+            </div>
+
+            <!-- Hero visual -->
+            <div class="hero-art">
+
+                <div class="sun-circle"></div>
+
+                <div class="hero-mango-card">
+
+                    <div class="mini-label">
+                        CURRENT ROYAL SPECIMEN
+                    </div>
+
+                    <div class="hero-mango">
+                        🥭
+                    </div>
+
+                    <div class="hero-crown">
+                        👑
+                    </div>
+
+                    <div class="hero-score">
+                        <span>ROYAL VIBE</span>
+                        <strong>97%</strong>
+                    </div>
+
+                    <div class="hero-status">
+                        ROYAL BLOOD<br>PROBABLY DETECTED
+                    </div>
+
+                </div>
+
+                <div class="floating-note note-one">
+                    ✦ BORN TO RULE
+                </div>
+
+                <div class="floating-note note-two">
+                    PALACE APPROVED
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONSTITUTION
+        ========================== -->
+
+        <section class="constitution-section" id="constitution">
+
+            <div class="section-heading">
+                <span>ARTICLE I</span>
+                <h2>The Mango Constitution</h2>
+            </div>
+
+            <div class="constitution-grid">
+
+                <div class="constitution-card">
+                    <div class="constitution-icon">👑</div>
+                    <h3>Royal Vibes Only</h3>
+                    <p>
+                        We do not judge taste, freshness, nutrition,
+                        ripeness or quality. We judge vibes.
+                    </p>
+                </div>
+
+                <div class="constitution-card">
+                    <div class="constitution-icon">⚖️</div>
+                    <h3>Every Mango Matters</h3>
+                    <p>
+                        Every uploaded candidate receives an entirely
+                        unnecessary royal investigation.
+                    </p>
+                </div>
+
+                <div class="constitution-card">
+                    <div class="constitution-icon">📜</div>
+                    <h3>The Council Decides</h3>
+                    <p>
+                        The final crown belongs to the mango with the
+                        strongest fictional royal presence.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             UPLOAD SECTION
+        ========================== -->
+
+        <section class="court-section" id="court">
+
+            <div class="section-heading center-heading">
+                <span>THE ROYAL COURT</span>
+                <h2>Summon Your Mangoes</h2>
+
+                <p>
+                    More mangoes = more unnecessary competition.
+                </p>
+            </div>
+
+
+            <div class="upload-box" id="uploadBox">
+
+                <div class="upload-icon">
+                    🥭
+                </div>
+
+                <h3>SUMMON YOUR MANGOES</h3>
+
+                <p>
+                    Drop your mango portraits here
+                    <br>
+                    or select them from your royal archives.
+                </p>
+
+                <label for="fileInput" class="upload-button">
+                    📸 CHOOSE MANGOES
+                </label>
+
+                <input
+                    type="file"
+                    id="fileInput"
+                    accept="image/*"
+                    multiple
+                    hidden
+                >
+
+                <small>
+                    JPG • JPEG • PNG • WEBP
+                </small>
+
+            </div>
+
+
+            <!-- Candidate controls -->
+
+            <div class="candidate-controls" id="candidateControls">
+
+                <div>
+                    <strong id="candidateCount">0</strong>
+                    <span>ROYAL CANDIDATES</span>
+                </div>
+
+                <div class="control-buttons">
+
+                    <label for="fileInput" class="small-button">
+                        🥭 ADD MORE
+                    </label>
+
+                    <button class="small-button danger" id="clearBtn">
+                        CLEAR ALL
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Uploaded mango cards -->
+
+            <div class="mango-grid" id="mangoGrid"></div>
+
+
+            <!-- Start button -->
+
+            <div class="judgment-area" id="judgmentArea">
+
+                <div class="warning-note">
+                    ⚠️ WARNING: THE COUNCIL TAKES THIS EXTREMELY SERIOUSLY.
+                </div>
+
+                <button class="judgment-button" id="beginJudgmentBtn">
+                    👑 BEGIN ROYAL JUDGMENT
+                </button>
+
+                <p>
+                    All candidates will be examined.
+                    No mango shall escape the council.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ANALYSIS SCREEN
+        ========================== -->
+
+        <section class="analysis-section hidden" id="analysisSection">
+
+            <div class="analysis-panel">
+
+                <div class="analysis-crown">
+                    👑
+                </div>
+
+                <div class="analysis-label">
+                    MANGO COUNCIL • CLASSIFIED PROTOCOL
+                </div>
+
+                <h2 id="analysisTitle">
+                    THE COUNCIL IS CONVENING
+                </h2>
+
+                <p id="analysisMessage">
+                    Preparing the royal machinery...
+                </p>
+
+                <div class="analysis-loader">
+
+                    <div class="loader-track">
+                        <div class="loader-progress" id="loaderProgress"></div>
+                    </div>
+
+                    <div class="loader-info">
+                        <span id="analysisPercent">0%</span>
+                        <span id="analysisCandidate">INITIALIZING</span>
+                    </div>
+
+                </div>
+
+                <div class="analysis-terminal">
+                    <div id="terminalLines"></div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             LEADERBOARD
+        ========================== -->
+
+        <section class="leaderboard-section hidden" id="leaderboardSection">
+
+            <div class="section-heading center-heading">
+                <span>THE OFFICIAL ROYAL COURT</span>
+                <h2>Royal Rankings</h2>
+
+                <p>
+                    The Council has compared all candidates.
+                    The consequences are unnecessary.
+                </p>
+            </div>
+
+            <div class="leaderboard" id="leaderboard"></div>
+
+            <button class="reveal-button" id="revealWinnerBtn">
+                ⚠️ REVEAL THE COUNCIL'S DECISION
+            </button>
+
+        </section>
+
+
+        <!-- =========================
+             WINNER REVEAL
+        ========================== -->
+
+        <section class="winner-section hidden" id="winnerSection">
+
+            <canvas id="confettiCanvas"></canvas>
+
+            <div class="winner-pretitle">
+                ⚠️ THE MANGO COUNCIL HAS REACHED A DECISION ⚠️
+            </div>
+
+            <div class="countdown" id="countdown">
+                3
+            </div>
+
+            <div class="winner-reveal hidden" id="winnerReveal">
+
+                <div class="winner-eyebrow">
+                    ✦ THE CROWN GOES TO ✦
+                </div>
+
+                <div class="winner-title">
+                    👑 SUPREME MANGO 👑
+                </div>
+
+                <div class="winner-card">
+
+                    <div class="winner-image-area">
+
+                        <div class="royal-glow"></div>
+
+                        <div class="winner-crown">
+                            👑
+                        </div>
+
+                        <img id="winnerImage" src="" alt="Winning mango">
+
+                        <div class="royal-stamp">
+                            ROYAL<br>
+                            APPROVED
+                        </div>
+
+                    </div>
+
+
+                    <div class="winner-details">
+
+                        <div class="winner-number" id="winnerNumber">
+                            MANGO #1
+                        </div>
+
+                        <h2 id="winnerName">
+                            THE SUPREME MANGO
+                        </h2>
+
+                        <div class="winner-score">
+                            <span>ROYALTY SCORE</span>
+                            <strong id="winnerScore">97%</strong>
+                        </div>
+
+                        <div class="winner-status">
+                            👑 SUPREME RULER OF THE MANGO KINGDOM
+                        </div>
+
+                        <div class="personality-box">
+
+                            <span>ROYAL PERSONALITY</span>
+
+                            <p id="winnerPersonality">
+                                Extremely arrogant.
+                            </p>
+
+                        </div>
+
+                        <div class="verdict-box">
+
+                            <span>OFFICIAL ROYAL VERDICT</span>
+
+                            <p id="winnerVerdict">
+                                This mango clearly believes it owns
+                                the entire fruit basket.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Archive -->
+
+                <div class="archive-card">
+
+                    <div class="archive-heading">
+                        📜 OFFICIAL ROYAL RECORD
+                    </div>
+
+                    <div class="archive-stats">
+
+                        <div>
+                            <strong id="archiveCandidates">0</strong>
+                            <span>CANDIDATES JUDGED</span>
+                        </div>
+
+                        <div>
+                            <strong id="archiveRejected">0</strong>
+                            <span>MANGOES REJECTED</span>
+                        </div>
+
+                        <div>
+                            <strong id="archiveDisputes">3</strong>
+                            <span>ROYAL DISPUTES</span>
+                        </div>
+
+                        <div>
+                            <strong id="archiveWinner">MANGO #1</strong>
+                            <span>SUPREME RULER</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="winner-buttons">
+
+                    <button class="primary-button" id="newElectionBtn">
+                        🔄 HOLD ANOTHER ELECTION
+                    </button>
+
+                    <button class="secondary-button" id="scrollCourtBtn">
+                        📜 VIEW ROYAL COURT
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+            🥭 MANGOROYALE 👑
+        </div>
+
+        <p>
+            An unnecessarily advanced system for solving a problem
+            nobody asked us to solve.
+        </p>
+
+        <div class="footer-line">
+            ✦ ROYALTY IS SUBJECTIVE ✦ MANGOES ARE NOT GOVERNED BY THIS WEBSITE ✦
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
